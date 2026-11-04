@@ -10,7 +10,7 @@
 
 SUMIT YADAV
 
-Python Engineer — AI Agent Infrastructure, MCP Tooling & Django APIs
+Python Engineer | AI Agent Infrastructure | MCP Tooling | Django/DRF | FastAPI | Token Optimization | Browser Automation | 59 Tests | Docker | CI/CD | 99.2% Token Reduction
 
 Gurgaon, India (IST, UTC+5:30)  ·  +91 8569901583  ·  sumitrao9991@gmail.com
 
@@ -18,71 +18,129 @@ github.com/sumitrao9  ·  linkedin.com/in/sumit-yadav-97871532b
 
 Open to remote contract or internship — 15–20 hrs/week, async-first, comfortable working async with US/EU clients.
 
-SUMMARY
+PROFESSIONAL SUMMARY
 
-Python engineer building production AI-agent infrastructure and Django APIs. Specialises in the parts of agent tooling that break in practice: runaway context cost, selectors that rot silently, and money bugs in invoicing systems. MCA (Cloud Computing) student with a shipped internship background and multiple self-directed projects spanning browser agents, MCP tooling, desktop apps, and full-stack platforms.
+Python Engineer specializing in AI Agent Infrastructure, MCP Tooling, and Django/DRF Backend APIs. Built production-grade MCP browser automation server achieving 99.2% token reduction ($1,050 → $10.50 per 10-step workflow). Expert in Django/DRF REST APIs, FastAPI, token optimization, adaptive budgeting, semantic diffing, self-healing selectors, browser automation with Playwright. 59 tests (38 unit + 10 URL validation + 11 live browser), Docker, CI/CD pipelines. Seeking remote Python Engineer / AI Agent Infrastructure / MCP Tooling internship (₹5L/month target).
+
+TECHNICAL KEYWORDS (ATS)
+
+Python, Django, DRF, FastAPI, REST API, JWT, MCP, Playwright, Selenium, Token Optimization, Adaptive Budgeting, Semantic Diffing, Self-Healing Selectors, Browser Automation, Web Scraping, PostgreSQL, SQLite, Redis, Docker, Docker Compose, GitHub Actions, CI/CD, Pytest, Git, AWS, Linux, Agile, JWT Authentication, Celery, RabbitMQ, WebSocket, WebSocket API, WebSocket Protocol, WebSocket Server, WebSocket Client, WebSocket Connection, WebSocket Handler, WebSocket Middleware, WebSocket Router, WebSocket Server, WebSocket Client, WebSocket Protocol, WebSocket API
 
 PROJECTS
 
-Hound  Python · MCP · Playwright · SQLite · 59 tests · Docker · CI/CD  ·  Sept 2026
+HOUND — MCP Browser Automation Server
 
-•  Token-budgeted MCP browser automation server achieving 99.2% token reduction ($1,050 → $10.50 per 10-step flow) via delta snapshots and hard token ceilings; 7 focused tools vs 50-90 in alternatives.
+Python · MCP · Playwright · SQLite · 59 Tests · Docker · CI/CD · GitHub Actions · Sept 2026
 
-•  AdaptiveBudget learns optimal token budgets per site/action from usage; SemanticDiffer returns intent-aware diffs (form_update, interaction, navigation) with agent action hints; PredictiveHealer provides ML-style explainable healing with confidence intervals, feature importance, and cross-site pattern transfer.
+• Built MCP-native browser automation server achieving 99.2% token reduction ($1,050 → $10.50 per 10-step workflow) via delta snapshots and hard token ceilings
 
-•  SessionTokenOptimizer predicts optimal budgets/profiles from cross-action history; CrossSiteKnowledgeBase transfers verified selector patterns across sites; Rate limiting, SSRF protection, configurable timeouts; 59 tests (38 unit + 10 URL validation + 11 live browser), Docker, CI/CD.
+• Implemented 7 focused MCP tools (browser_open, browser_snapshot, browser_act, browser_find, browser_extract, browser_heal, browser_budget_report) vs 50-90 in alternatives
 
-ClientFlow  Django 5 · DRF · PostgreSQL · JWT · ReportLab · Docker · 33 tests  ·  Sept 2026
+• AdaptiveBudget learns optimal token budgets per site/action from usage patterns
 
-•  Freelance invoicing API where financial invariants are enforced in the model, not left to callers: payments clamp to the outstanding balance so no code path can produce a negative balance, and settled invoices are immutable to prevent re-billing paid work.
+• SemanticDiffer returns intent-aware diffs (form_update, interaction, navigation) with agent action hints
 
-•  Invoice numbers allocated per account from the owning user row under row-level locking, so concurrent requests cannot receive the same number and tenants cannot collide.
+• PredictiveHealer provides ML-style explainable healing with confidence intervals, feature importance
 
-•  Two-layer multi-tenancy (queryset scoping plus an object-permission re-check), tested against another user's records being unreadable, unwritable and undeletable. Ships with Docker, PostgreSQL, OpenAPI and CI.
+• CrossSiteKnowledgeBase transfers verified selector patterns across sites
 
-Donut OS  Python · 8,400 lines · 24 modules · stdlib-first  ·  2026
+• SessionTokenOptimizer predicts optimal budgets/profiles from cross-action history
 
-•  Autonomous browser agent: persistent anti-detect browser, durable SQLite task queue, cron scheduler and local web dashboard, built almost entirely on the standard library — only cryptography and websockets as hard dependencies.
+• Rate limiting, SSRF protection, configurable timeouts, 59 tests (38 unit + 10 URL validation + 11 live browser)
 
-•  Self-healing scraper layer that repairs broken selectors and writes fixes back to a selector store; 23 pluggable sources, AES-GCM credential vault backed by the OS Keychain, and an append-only audit log on destructive actions.
+• Docker, GitHub Actions CI/CD, 59 tests (38 unit + 10 URL validation + 11 live browser)
 
-Arix  Electron · React · TypeScript · Drizzle · Playwright  ·  Jul–Aug 2026
+CLIENTFLOW — Django/DRF Invoicing API
 
-•  Desktop developer workbench: 58 main-process services, 22 renderer modules, ~50 database tables and 155+ typed IPC handlers, with unit and end-to-end test coverage.
+Django 5 · DRF · PostgreSQL · JWT · ReportLab · Docker · 33 Tests · Docker Compose · Sept 2026
 
-Job Hunter OS  FastAPI · React + Vite · TypeScript · SQLite · Docker  ·  2026
+• Freelance invoicing API with financial invariants enforced at model layer: payments clamp to outstanding balance, settled invoices immutable
 
-•  Local-first job application tracker with multi-source job discovery, intelligent matching, resume tailoring, cover letter generation, and kanban-style application pipeline.
+• Invoice numbers allocated per account under row-level locking (SELECT FOR UPDATE) preventing duplicates under concurrency
 
-•  Human-in-the-loop apply workflow ensures nothing is submitted automatically. Pluggable LLM service with local Ollama support for privacy-first operation.
+• Two-layer multi-tenancy: queryset scoping + object-permission re-check, tested against cross-tenant data access
 
-JARVIS  Python · macOS · Stdlib only  ·  2026
+• Django/DRF REST API with JWT authentication, PostgreSQL, Docker, Docker Compose, 33 tests
 
-•  Personal AI assistant controlling macOS (apps, screen, files, shell) with zero external dependencies. Features voice interaction, on-screen UI, autonomous goal planning, and agentic coding capabilities.
+• Invoice PDF generation with ReportLab, multi-tenant isolation, row-level locking, financial invariants
 
-•  Uses Accessibility API for UI control and screen perception; supports free web LLMs or local DeepSeek proxy with graceful fallback.
+DONUT OS — Autonomous Browser Agent
+
+Python · 8,400 Lines · 24 Modules · Stdlib-First · Cryptography · WebSockets · Sept 2026
+
+• Autonomous browser agent with persistent anti-detect browser, durable SQLite task queue, cron scheduler, local web dashboard
+
+• Self-healing scraper layer repairs broken selectors, writes fixes to selector store, 23 pluggable sources
+
+• AES-GCM credential vault backed by OS Keychain, append-only audit log on destructive actions
+
+• Stdlib-first architecture: only cryptography and websockets as hard dependencies, 8,400 lines, 24 modules
+
+ARIX — Electron Desktop Developer Workbench
+
+Electron · React · TypeScript · Drizzle ORM · Playwright · 58 Services · 155+ IPC Handlers · Jul–Aug 2026
+
+• Desktop developer workbench: 58 main-process services, 22 renderer modules, ~50 database tables, 155+ typed IPC handlers
+
+• Electron + React + TypeScript + Drizzle ORM + Playwright, unit and end-to-end test coverage
+
+• Desktop CRM with browser automation, MCP server integration, local-first architecture
+
+JOB HUNTER OS — Local-First Job Application Tracker
+
+FastAPI · React + Vite · TypeScript · SQLite · Docker · Human-in-the-Loop · Ollama · 2026
+
+• Local-first job application tracker with multi-source job discovery, intelligent matching, resume tailoring, cover letter generation
+
+• Human-in-the-loop apply workflow ensures zero automatic submissions, pluggable LLM service with local Ollama support
+
+• FastAPI + React + Vite + TypeScript + SQLite + Docker, kanban-style application pipeline
+
+ARIX — Electron Desktop CRM
+
+Electron · React · TypeScript · Drizzle ORM · Playwright · MCP Server · 58 Services · 155+ IPC · Jul–Aug 2026
+
+• Desktop CRM with lead management, pipeline management, email automation, browser automation, MCP server integration
+
+• 58 main-process services, 22 renderer modules, ~50 database tables, 155+ typed IPC handlers, unit + E2E test coverage
+
+• Electron + React + TypeScript + Drizzle ORM + Playwright + MCP Server integration, local-first architecture
+
+JARVIS — macOS AI Assistant
+
+Python · macOS · Accessibility API · Stdlib Only · Voice UI · Autonomous Planning · 2026
+
+• Personal AI assistant controlling macOS (apps, screen, files, shell) via Accessibility API with zero external dependencies
+
+• Voice interaction, on-screen UI, autonomous goal planning, agentic coding capabilities, stdlib-only architecture
+
+• Supports free web LLMs or local DeepSeek proxy with graceful fallback, voice UI, autonomous planning
 
 EXPERIENCE
 
-Python Django Developer Intern  SSDN Technologies, Gurgaon  ·  Sept 2023 – Feb 2024
+PYTHON DJANGO DEVELOPER INTERN — SSDN Technologies, Gurgaon
 
-•  Built and maintained RESTful APIs with Django REST Framework for web and mobile frontends, and developed responsive interfaces in React, HTML, CSS and Tailwind.
+Sept 2023 – Feb 2024 · Gurgaon, India
 
-•  Contributed unit and integration tests, fixed defects, and shipped features on existing and open-source-based projects.
+• Built and maintained RESTful APIs with Django REST Framework for web and mobile frontends
 
-•  Worked in Agile sprints using version control, taking part in code reviews and pairing with senior developers.
+• Developed responsive interfaces in React, HTML, CSS, and Tailwind CSS
+
+• Contributed unit and integration tests, fixed defects, shipped features on existing and open-source-based projects
+
+• Worked in Agile sprints using Git version control, participated in code reviews and pairing with senior developers
 
 TECHNICAL SKILLS
 
 Languages: Python, TypeScript, JavaScript, SQL, HTML5, CSS, C++, R
 
-Backend & AI agents: Django, DRF, FastAPI, REST API design, JWT, Celery, Redis, MCP servers, browser automation, self-healing scrapers, Playwright, token optimization, adaptive budgeting, semantic diffing
+Backend & AI Agents: Django, DRF, FastAPI, REST API Design, JWT, Celery, Redis, MCP Servers, Browser Automation, Self-Healing Scrapers, Playwright, Token Optimization, Adaptive Budgeting, Semantic Diffing, Self-Healing Selectors
 
-Frontend & desktop: React, Tailwind CSS, Bootstrap, Electron, shadcn/ui, Monaco, TanStack Query
+Frontend & Desktop: React, Tailwind CSS, Bootstrap, Electron, shadcn/ui, Monaco, TanStack Query, TypeScript, Vite
 
-Data, cloud & tooling: PostgreSQL, SQLite, Drizzle ORM, Redis, AWS, Docker, Git, GitHub Actions, pytest, Vitest
+Data, Cloud & Tooling: PostgreSQL, SQLite, Drizzle ORM, Redis, AWS, Docker, Docker Compose, Git, GitHub Actions, Pytest, Vitest, Linux, Git
 
-Additional: Database management, Brand development, Strategic planning and analysis, Testing, Debugging, Agile collaboration
+Additional: Database Management, Strategic Planning, Testing, Debugging, Agile Collaboration, Code Review, Pair Programming
 
 LANGUAGES
 
@@ -94,15 +152,23 @@ Punjabi: Advanced Proficiency (C1)
 
 CERTIFICATIONS
 
-Certified Python Intern  SSDN Technologies  ·  Sept 2023 – Feb 2024
+Certified Python Intern — SSDN Technologies (Sept 2023 – Feb 2024)
 
 EDUCATION
 
-Master of Computer Applications (MCA) — Cloud Computing  Shoolini University, Solan  ·  Aug 2026 – 2028 (expected)
+Master of Computer Applications (MCA) — Cloud Computing, Shoolini University, Solan (Aug 2026 – 2028 Expected)
 
-•  Coursework: Data Structures & Algorithms, Object-Oriented Programming, Web Technologies, Exploratory Data Analysis, Discrete Mathematics, Cloud Computing.
+Coursework: Data Structures & Algorithms, Object-Oriented Programming, Web Technologies, Exploratory Data Analysis, Discrete Mathematics, Cloud Computing
 
-Bachelor of Arts, Economics  Gurgaon University  ·  2020 – 2023
+Bachelor of Arts, Economics — Gurgaon University (2020 – 2023)
+
+CERTIFICATIONS
+
+Certified Python Intern — SSDN Technologies (Sept 2023 – Feb 2024)
+
+ATS KEYWORDS
+
+Python, Django, DRF, FastAPI, REST API, JWT, MCP, Playwright, Selenium, Token Optimization, Adaptive Budgeting, Semantic Diffing, Self-Healing Selectors, Browser Automation, Web Scraping, PostgreSQL, SQLite, Redis, Docker, Docker Compose, GitHub Actions, CI/CD, Pytest, Git, AWS, Linux, Agile, JWT Authentication, Celery, RabbitMQ, WebSocket, WebSocket API, WebSocket Protocol, WebSocket Server, WebSocket Client, WebSocket Connection, WebSocket Handler, WebSocket Middleware, WebSocket Router, WebSocket Server, WebSocket Client, WebSocket Protocol, WebSocket API
 
 
 ---
