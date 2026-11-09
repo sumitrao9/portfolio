@@ -174,3 +174,11 @@ Python, Django, DRF, FastAPI, REST API, JWT, MCP, Playwright, Selenium, Token Op
 ---
 
 *Open to remote contract or internship — 15–20 hrs/week, async-first, comfortable working async with US/EU clients.*
+
+## Support / Hosted / Hire
+- **Hosted/Pro**: need a managed 24/7 endpoint, API keys, quotas, or integration help? Open an issue: https://github.com/sumitrao9/portfolio/issues
+- **Sponsor**: GitHub Sponsors (FUNDING.yml) supports maintenance.
+- **Hire/Consulting**: custom features, deployment, or automation workflows (authorized use only).
+
+*Built by [Sumit Yadav](https://github.com/sumitrao9). Authorized/ethical use only.*
+
